@@ -19,6 +19,43 @@
             padding: 1em;
             text-align: center;
         }
+                .tab {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+
+        .tab button {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+
+        .tab button:hover {
+            background-color: #007bff;
+        }
+
+        .tab button.active {
+            background-color: #007bff;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabcontent.active {
+            display: block;
+        }
 
         section {
             max-width: 800px;
